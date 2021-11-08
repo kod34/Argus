@@ -2,7 +2,7 @@ A script that checks the validity of emails through brute force, a dictionnary o
   
 ## Installation  
   
-pip3 install -r requirements 
+pip3 install -r requirements.txt  
   
 ## Usage  
   
