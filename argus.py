@@ -15,7 +15,7 @@ data={
 }
 
 def usage(msg=''):
-    print("""\nUsage: emailreconer.py [-b] [-c charset] [-i filein] [-o fileout] [-t xx]
+    print("""\nUsage: argus.py [-b] [-c charset] [-i filein] [-o fileout] [-t xx]
     
     -e <email>          Single validation check
     -i <file in>        Dictionary
@@ -27,11 +27,11 @@ def usage(msg=''):
     
     Examples:
     Single Email verification
-        emailreconer.py -e example@example.com [-t 0.1]
+        argus.py -e example@example.com [-t 0.1]
     Dictionary verification
-        emailreconer.py -i dictionary.txt [-o results.txt] [-t 0.1]
+        argus.py -i dictionary.txt [-o results.txt] [-t 0.1]
     Brute-force verification
-        emailreconer.py -b examp**3*5@example.com [-c 1g7.] [-o results.txt] [-t 0.1]
+        argus.py -b examp**3*5@example.com [-c 1g7.] [-o results.txt] [-t 0.1]
 """)
 
     if msg:
@@ -159,5 +159,19 @@ def main():
                 usage()
     run_check()
 
+
+banner = '''
+    _                            
+   / \    _ __  __ _  _   _  ___ 
+  / _ \  | '__|/ _` || | | |/ __|
+ / ___ \ | |  | (_| || |_| |\__ \\
+/_/   \_\|_|   \__, | \__,_||___/
+               |___/             
+            by kod34
+
+'''
+
+
 if __name__ == '__main__':
+    print(banner)
     main()

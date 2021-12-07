@@ -6,7 +6,7 @@ pip3 install -r requirements.txt
   
 ## Usage  
   
-emailreconer.py [-b] [-c charset] [-i filein] [-o fileout] [-t xx]
+argus.py [-b] [-c charset] [-i filein] [-o fileout] [-t xx]
     
     -e <email>          Single validation check
     -i <file in>        Dictionary
@@ -18,11 +18,11 @@ emailreconer.py [-b] [-c charset] [-i filein] [-o fileout] [-t xx]
     
     Examples:
     Single Email verification
-        emailreconer.py -e example@example.com [-t 0.1]
+        argus.py -e example@example.com [-t 0.1]
     Dictionary verification
-        emailreconer.py -i dictionary.txt [-o results.txt] [-t 0.1]
+        argus.py -i dictionary.txt [-o results.txt] [-t 0.1]
     Brute-force verification
-        emailreconer.py -b examp**3*5@example.com [-c 1g7.] [-o results.txt] [-t 0.1]
+        argus.py -b examp**3*5@example.com [-c 1g7.] [-o results.txt] [-t 0.1]
   
 ## Disclaimer  
 The sole purpose of writing this program was research, its misuse is the responsibility of the user only.
