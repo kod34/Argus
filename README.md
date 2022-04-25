@@ -1,4 +1,4 @@
-<h1><center>Argus</center></h1>
+<h1 align="center"><b>Argus</b></center></h1>
 
 <p align="center"> A script that checks the validity of emails through brute force, a dictionnary or simply inputing the full email.  
 
