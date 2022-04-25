@@ -25,7 +25,9 @@ Python
 
 
 ```
-pip3 install -r requirements.txt  
+cd Argus
+chmod +x install.sh
+./install.sh 
 ```
 
 ## 🎈 Usage <a name="usage"></a>
