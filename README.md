@@ -26,6 +26,7 @@ Linux
 
 
 ```
+git clone https://github.com/kod34/Argus
 cd Argus
 chmod +x install.sh
 ./install.sh 
