@@ -34,7 +34,7 @@ chmod +x install.sh
 ## 🎈 Usage <a name="usage"></a>
 
 ```
-argus.py [-b] [-c charset] [-i filein] [-o fileout] [-t xx]
+argus [-b] [-c charset] [-i filein] [-o fileout] [-t xx]
     
     -e <email>          Single validation check
     -i <file in>        Dictionary
