@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 import itertools, getopt, sys, re, threading, time
-from validate_email import validate_email
-
+from validate_email_address import validate_email
 data={
     'email':'',
     'bf':'',
@@ -46,7 +45,7 @@ def verify(email,fileout=''):
     if fileout:
         try:
             f = open(fileout,'a+')
-            if validate_email(email_address=email):
+            if validate_email(email, verify=True):
                 data['success']+=1
                 f.write('[+] '+str(email)+' >> Valid\n')
             else:
@@ -56,7 +55,7 @@ def verify(email,fileout=''):
             print("[!] The file does not exist anymore...\n...Quitting...")
             sys.exit(1)
     else:
-        if validate_email(email_address=email):
+        if validate_email(email, verify=True):
             data['success']+=1
             print('[+] ',email,' >> Valid')
         else:
@@ -104,7 +103,7 @@ def single_check():
     except:
         print('[!] Email format Error')
         sys.exit(0)        
-    if validate_email(email_address=data['email']):
+    if validate_email(data['email'], verify=True):
         data['success']+=1
         print('[+] ',data['email'],' >> Valid')
     else:

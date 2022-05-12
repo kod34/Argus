@@ -1,2 +1,2 @@
-py3-validate-email
+validate-email-address
 py3dns
