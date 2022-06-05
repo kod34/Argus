@@ -1,6 +1,6 @@
 <h1 align="center"><b>Argus</b></center></h1>
 
-<p align="center"> A script that checks the validity of emails through brute force, a dictionnary or simply inputing the full email.  
+<p align="center"> A script that checks the validity of emails through brute force, a dictionary or simply inputting the full email.  
 
 </p>
 
